@@ -25,6 +25,12 @@ public class Pilot {
     // Constructeur par défaut requis par JPA
     public Pilot() { }
 
+    public Pilot(String name, String nationality) {
+        this.name = name;
+        this.nationality = nationality;
+    }
+
+
     // Getter pour le nom (utilisé notamment pour éviter les duplications)
     public String getName() {
         return name;
